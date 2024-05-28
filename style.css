@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'One-Piece';
+    src: url("./fonts/one_piece_font.ttf");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Glory', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: radial-gradient(at center, #424242 0%, #000 100%);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+header img {
+    width: 60%;
+}
+
+/* Main section */
+main {
+    padding: 1em;
+    background: radial-gradient(at center, #F00, #300000);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro {
+    font-size: 7rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*All Section*/
+main .info {
+    width: 90%;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+
+main .info:has(img.left) {
+    grid-template-columns: 1fr 1.5fr;
+}
+
+main .info:has(img.right) {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+main .info img {
+    border: 15px solid white;
+    border-radius: 30px;
+    width: 100%;
+}
+
+main .info img.right {
+    order: 2;
+}
+main .info div.left {
+    order: 1;
+    width: 90%;
+}
+main .info div.right {
+    width: 90%;
+}
+
+/* Section text */
+main .info .name {
+    font-size: 130px;
+    margin: 0;
+    padding: 0;
+}
+
+main .info .actor {
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+main .info p {
+    font-size: 1.25rem;
+}
+
+/* Footer */
+footer {
+    font-size: 80px;
+    color: white;
+}
+
+/* Utility Classes */
+.one-piece {
+    font-family: "One-Piece";
+}
